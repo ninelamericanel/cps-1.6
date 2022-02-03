@@ -20,6 +20,15 @@
     @media screen and (min-width: $minViewTablet) {
       margin-top: 0;
     }
+
+    .title {
+      padding: 0;
+
+      .title__text:before {
+        left: calc(-1 * var(--main-padding));
+      }
+    }
+
   }
 }
 
