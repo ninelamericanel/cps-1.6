@@ -27,8 +27,8 @@ body {
 //
 //
   @media screen and (min-width: $minViewDesktop) {
-    width: max-content;
-    flex-shrink: 100;
+    width: calc(100vw - 320px);
+    flex: 1;
   }
 }
 
