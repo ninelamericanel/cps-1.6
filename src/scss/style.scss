@@ -18,14 +18,13 @@ body {
 }
 
 .container {
-  padding: var(--main-padding);
+  padding-left: var(--main-padding);
+  padding-right: var(--main-padding);
 }
 
 .content {
   width: 100vw;
-//  padding: var(--main-padding);
-//
-//
+
   @media screen and (min-width: $minViewDesktop) {
     width: calc(100vw - 320px);
     flex: 1;

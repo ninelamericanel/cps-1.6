@@ -3,7 +3,7 @@
 
 .information {
   padding: 0 var(--main-padding);
-  width: 100vw;
+  width: 100%;
   display: flex;
   gap: var(--main-padding);
   flex-direction: column;
@@ -69,16 +69,5 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-
-  .main-content__photo {
-    display: block;
-    margin: 0 auto;
-    max-width: 360px;
-    width: 100%;
-    text-align: center;
-    height: auto;
-  }
-}
 
 
