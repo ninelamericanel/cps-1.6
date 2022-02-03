@@ -1,0 +1,51 @@
+@import "variable";
+
+.submenu {
+  padding: var(--main-padding);
+
+  .submenu__list {
+    display: flex;
+    align-items: center;
+
+    overflow-x: auto;
+
+    @media screen and (min-width: $minViewTablet) {
+      flex-wrap: wrap;
+    }
+  }
+
+  .submenu__list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .submenu__item {
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    transition-duration: 500ms;
+
+    background-color: inherit;
+
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+
+    .submenu__link {
+      overflow-x: scroll;
+      width: auto;
+      white-space: nowrap;
+    }
+  }
+
+  .submenu__item--active,
+  .submenu__item:focus,
+  .submenu__item:hover {
+    background-color: $bgHeadlineColor;
+
+    border: 2px solid $borderBlock;
+    border-radius: 5px;
+  }
+
+}
+
+
+
+

@@ -1,0 +1,49 @@
+@import 'fonts', 'header', 'btns-popup', 'reset', 'information', 'variable', 'headline', 'brand', 'equipment',
+'price-block', 'wrappers', 'submenu', 'popup1' ,'link', 'title', 'feedback', 'popup', 'form', 'menu', 'footer', 'connection', 'swiper', 'buttons', 'price', 'repair', 'table';
+
+$minWidth: 320;
+$maxWidth: 1920;
+
+body {
+  font-family: "TT Lakes", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $mainTextColor;
+  position: relative;
+  display: flex;
+
+  flex-direction: row-reverse;
+  //background-color: #f8f8f8;
+}
+
+.content {
+  width: 100vw;
+//  padding: var(--main-padding);
+//
+//
+  @media screen and (min-width: $minViewDesktop) {
+//    //width: max-content;
+//
+//    flex-shrink: 1;
+  }
+}
+
+.wr /*wrapper - для всей верстки*/ {
+  display: flex;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+
+:root {
+  --main-padding: 16px;
+
+  @media screen and (min-width: $minViewTablet) {
+    --main-padding: 24px;
+  }
+
+  @media screen and (min-width: $minViewDesktop) {
+    --main-padding: 30px;
+  }
+}

@@ -1,0 +1,25 @@
+@import "variable";
+
+.feedback {
+  width: 100vw;
+  height: 100vh;
+
+  padding: var(--main-padding);
+
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--main-padding);
+
+  @media screen and (min-width: $minViewTablet) {
+    width: 440px;
+  }
+
+  .feedback__header {
+    margin-top: 70px;
+
+    @media screen and (min-width: $minViewTablet) {
+      margin-top: 0;
+    }
+  }
+}
+

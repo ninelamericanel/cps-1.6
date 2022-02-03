@@ -1,0 +1,91 @@
+@import "variable";
+
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 1;
+
+  .popup__outside {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .popup__content {
+    width: max-content;
+    height: 100%;
+
+    background-color: #FFFFFF;
+    position: absolute;
+    box-shadow: 16px 0 52px 20px rgba(14, 24, 80, 0.8);
+    z-index: 2;
+
+    .popup__btn-close {
+      position: absolute;
+
+    }
+  }
+
+  &--left {
+
+    @media screen and (min-width: $minViewDesktop) {
+      width: 320px;
+      position: relative;
+
+      z-index: -1;
+    }
+
+    .popup__outside {
+      @media screen and (min-width: $minViewDesktop) {
+        display: none;
+      }
+    }
+
+    .popup__content {
+      .popup__btn-close {
+        top: calc(var(--main-padding) + 9px);
+        left: var(--main-padding);
+
+        @media screen and (min-width: $minViewDesktop) {
+          display: none;
+        }
+
+      }
+      @media screen and (min-width: $minViewDesktop) {
+        box-shadow: none;
+      }
+
+
+    }
+  }
+
+}
+
+
+
+
+
+.popup--right {
+
+  .popup__content {
+   right: 0;
+  }
+    .popup__btn-close {
+      top: var(--main-padding);
+      left: var(--main-padding);
+
+      @media screen and (min-width: $minViewTablet) {
+
+        left: calc(-1 * var(--main-padding) - 30px);
+      }
+    }
+  }
+
+.popup--close {
+  display: none;
+}

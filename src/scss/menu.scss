@@ -1,0 +1,149 @@
+@import "variable";
+
+.menu {
+  width: 100vw;
+  height: 100vh;
+
+  padding: var(--main-padding);
+
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--main-padding);
+
+  @media screen and (min-width: $minViewTablet) {
+    width: 320px;
+  }
+
+
+  .menu__item {
+    position: relative;
+    transition-duration: 500ms;
+
+    .menu__link {
+      transition-duration: 500ms;
+      color: $mainTextColor;
+    }
+  }
+
+  .menu__item:before {
+    display: block;
+    content: "";
+
+    height: 0;
+    width: 0;
+    background-color: #41f6d7;
+    border-radius: 20px;
+
+    position: absolute;
+    left: calc(-1 * var(--main-padding));
+
+    transition-duration: 500ms;
+  }
+
+  .menu__item--active:before,
+  .menu__item:hover:before {
+    display: block;
+    content: "";
+
+    height: 32px;
+    width: 4px;
+    background-color: #41f6d7;
+    border-radius: 20px;
+
+    position: absolute;
+  }
+
+  .menu__item--active {
+
+    .menu__link {
+      color: $titleColor;
+    }
+  }
+
+  .menu__link:hover {
+    color: $titleColor;
+  }
+
+  .menu__header {
+    display: flex;
+    align-items: center;
+    margin-left: 55px;
+
+    @media screen and (min-width: $minViewDesktop) {
+      margin-left: 0;
+    }
+
+    .menu__search-btn {
+      margin-left: auto;
+    }
+
+  }
+
+  .menu__nav {
+    flex: 1;
+
+    .menu__list {
+
+      .menu__item {
+        display: flex;
+        align-items: center;
+        position: relative;
+      }
+
+      .menu__item--active {
+        position: relative;
+      }
+
+
+      .menu__item:not(:last-child) {
+        margin-bottom: 35px;
+      }
+
+    }
+  }
+
+
+  .popup-menu__footer {
+    position: absolute;
+    bottom: 0;
+
+    .popup-menu__connection-btn {
+      margin-bottom: 15px;
+    }
+
+    .popup-menu__contact {
+      margin-bottom: 40px;
+
+      .contact__phone {
+        margin-top: 12px;
+      }
+    }
+
+    .footer__list-lang {
+      display: flex;
+
+      .list-lang__link:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .phone {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+  }
+}
+
+//
+//
+//
+//
+//@media screen and (min-width: 768px) {
+//
+//  .popup-menu {
+//    width: 320px;
+//  }
+//
+//}

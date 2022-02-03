@@ -1,0 +1,77 @@
+@import 'variable';
+
+.header {
+  padding: var(--main-padding); /*!*/
+  display: flex;
+  align-items: center;
+
+  border-bottom: 1px solid $borderTopBlock;
+  background-color: $bgHeadlineColor;
+
+  padding-right: 120px; /*!*/
+
+  @media screen and (min-width: $minViewDesktop) {
+    display: none;
+  }
+
+  .header__menu-btn {
+    margin-right: 15px;
+  }
+
+  .header__logo {
+    display: flex;
+    align-items: center;
+
+    &:after {
+      display: block;
+      content: "";
+      height: 32px;
+      width: 2px;
+      background-color: #eaeaea;
+      margin-left: 15px;
+      border-radius: 5px;
+
+      @media screen and (min-width: $minViewTablet) {
+        display: none;
+      }
+    }
+
+    &:before {
+      display: block;
+      content: "";
+      height: 32px;
+      width: 2px;
+      margin-right: 15px;
+      background-color: #eaeaea;
+      border-radius: 5px;
+
+      @media screen and (max-width: $minViewTablet) {
+        display: none;
+      }
+    }
+
+  }
+
+
+
+  .header__connection-btn {
+    margin-left: auto;
+    margin-right: 15px;
+
+    @media screen and (max-width: $minViewTablet) {
+      display: none;
+    }
+
+    &:after {
+      display: block;
+      content: "";
+      height: 32px;
+      width: 2px;
+      background-color: #eaeaea;
+      border-radius: 5px;
+    }
+  }
+
+
+}
+

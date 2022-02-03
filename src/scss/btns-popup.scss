@@ -1,0 +1,29 @@
+@import "variable";
+
+.btns-popup {
+  display: flex;
+  column-gap: 15px;
+
+  position: absolute;
+  top: calc(var(--main-padding) + 9px);
+  right: var(--main-padding);
+
+  @media screen and (min-width: $minViewDesktop) {
+    top: calc(var(--main-padding));
+  }
+
+  .wrapper-btn {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  .btns-popup__text {
+    display: none;
+
+    @media screen and (min-width: $minViewDesktop) {
+      display: block;
+    }
+  }
+
+}
