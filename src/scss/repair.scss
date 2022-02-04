@@ -1,22 +1,78 @@
 @import "variable";
+
 .repair {
-  //background-color: $bgMainColor;
+  //width: 100vw;
+  overflow: hidden;
+
+  &--brand {
+    .repair__item {
+      height: 72px;
+    }
+  }
+
+  &--equipment {
+    .repair__item {
+      height: 160px;
+    }
+  }
+
+  .repair__block {
+    margin: 0 auto;
+
+    @media screen and (min-width: $minViewTablet) {
+      width: $minViewTablet;
+    }
+
+    @media screen and (min-width: $minViewDesktop) {
+      width: calc(1366px - 320px);
+    }
+
+  }
+
+  .repair__list {
+    @media screen and (min-width: $minViewTablet) {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: var(--main-padding);
+
+      box-sizing: border-box;
+      position: static;
+      z-index: auto;
+    }
+  }
+
   .repair__item {
-    margin-bottom: 16px;
+
+
+    @media screen and (min-width: $minViewTablet) {
+      margin-bottom: 16px;
+
+
+    }
+
+    @media screen and (min-width: $minViewTablet) {
+      width: 224px;
+
+    }
+
+    @media screen and (min-width: $minViewDesktop) {
+      max-width: 240px;
+    }
   }
 
   .repair__item__hide {
     display: none;
   }
 
-
-
-  .repair__list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-  }
+  //
+  //
+  //
+  //.repair__list {
+  //  display: flex;
+  //  justify-content: center;
+  //  flex-wrap: wrap;
+  //
+  //}
 
 }
 
