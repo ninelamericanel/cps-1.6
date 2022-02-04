@@ -5,12 +5,30 @@ import 'swiper/modules/pagination/pagination.scss';
 
 Swiper.use([Pagination]);
 
-new Swiper(".swiper-container", {
-  pagination: {
-    el: ".swiper-pagination",
-    type: "bullets",
-    clickable: true,
-  },
-  slidesPerView: 'auto',
-  slidesPerColumn: 1,
-});
+
+window.addEventListener('resize', () => {
+  console.log(window.innerWidth);
+  return window.innerWidth < 768 ? new Swiper(".swiper-container", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true,
+      },
+      slidesPerView: 'auto',
+      slidesPerColumn: 1,
+    }) : null;
+})
+
+// const ;
+
+// function displaySwiper() {
+//   console.log(window.innerWidth);
+//
+//   return window.innerWidth < 768 ? mySwiper.init() : null;
+// }
+
+
+
+
+
+
