@@ -76,16 +76,12 @@
   }
 
   .price__additional {
-    padding-left: var(--main-padding);
-    padding-right: var(--main-padding);
-
-    padding-bottom: var(--main-padding);
-
+    padding: 0 var(--main-padding) var(--main-padding) var(--main-padding);
 
     .price__additional-description {
       font-size: 14px;
       line-height: 20px;
-
+      margin-bottom: var(--main-padding);
     }
   }
 
