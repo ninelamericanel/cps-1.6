@@ -6,38 +6,36 @@
   &--brand {
     .repair__item {
       height: 72px;
+    }
 
-      .repair__content {
-        height: 100%;
+    .repair__content {
+      height: 100%;
+    }
 
-        .repair__btn {
-          margin-left: auto;
-        }
-      }
+    .repair__btn {
+      margin-left: auto;
     }
   }
 
   &--equipment {
     .repair__item {
       height: 160px;
+    }
 
-      .repair__content {
-        height: 100%;
-        justify-content: space-between;
+    .repair__content {
+      height: 100%;
+      justify-content: space-between;
+    }
 
-        .repair__text {
-          align-self: flex-start;
-          font-size: 16px;
-          line-height: 24px;
-          font-weight: 500;
-        }
+    .repair__text {
+      align-self: flex-start;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+    }
 
-        .repair__btn {
-          align-self: flex-end;
-        }
-      }
-
-
+    .repair__btn {
+      align-self: flex-end;
     }
   }
 
@@ -78,6 +76,10 @@
           max-width: 240px;
         }
 
+        &--hide {
+          display: none;
+        }
+
         .repair__content {
           display: flex;
           align-items: center;
@@ -88,14 +90,20 @@
 
           border: 1px solid #eaeaea;
           border-radius: 6px;
+
+          box-sizing: border-box;
         }
       }
     }
 
   }
 
-
-  .repair__item__hide {
+  .repair__buttons {
     display: none;
+
+    @media screen and (min-width: $minViewTablet) {
+      padding-left: var(--main-padding);
+      display: block;
+    }
   }
 }
