@@ -1,33 +1,15 @@
 .brand {
 
-  display: flex;
-  align-items: center;
+  min-width: 220px;
+  max-width: 600px;
 
-  height: 72px;
-  padding: 16px;
-  box-sizing: border-box;
-  background-color: #ffffff;
-
-  border: 1px solid #eaeaea;
-  border-radius: 6px;
-
-  .brand__btn {
-    margin-left: auto;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .brand {
-    min-width: 220px;
-    max-width: 600px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1439px) {
-  .brand {
+  @media screen and (min-width: $minViewTablet) {
     width: 224px;
   }
+
+
 }
+
 
 @media screen and (min-width: 1440px) {
   .brand {
