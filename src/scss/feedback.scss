@@ -23,6 +23,7 @@
 
     .title {
       padding: 0;
+      background-color: inherit;
 
       .title__text:before {
         left: calc(-1 * var(--main-padding));

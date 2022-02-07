@@ -5,6 +5,7 @@
   column-gap: 15px;
 
   position: absolute;
+  z-index: 1;
   top: calc(var(--main-padding) + 9px);
   right: var(--main-padding);
 

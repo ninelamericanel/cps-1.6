@@ -8,6 +8,7 @@
   gap: var(--main-padding);
   flex-direction: column;
   justify-content: center;
+  background-color: $bgMainColor;
 
   @media screen and (min-width: $minViewTablet) {
     flex-direction: row;

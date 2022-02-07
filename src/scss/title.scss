@@ -3,8 +3,8 @@
 .title {
   position: relative;
   padding: var(--main-padding); /*!*/
-  @media screen and (min-width: $minViewDesktop) {
-  }
+
+  background-color: $bgMainColor;
 
   .title__text {
     font-weight: 700;

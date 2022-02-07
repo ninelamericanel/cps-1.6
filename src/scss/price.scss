@@ -1,31 +1,93 @@
 @import "variable";
 
 .price {
+  background-color: $bgMainColor;
+
+  .price__headline {
+    margin-bottom: var(--main-padding);
+  }
 
   .price__block {
+    margin-bottom: 24px;
+
+    &--mobile {
+      overflow: hidden;
+
+      @media screen and (min-width: $minViewTablet) {
+        display: none;
+      }
+
+      .price__content {
+        min-width: 260px;
+        max-width: 600px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 200px;
+        padding: 16px;
+        box-sizing: border-box;
+        background-color: $bgHeadlineColor;
+        border-radius: 6px;
+
+        .price__info {
+
+          p {
+            font-size: 14px;
+          }
+
+          .price__title {
+            line-height: 16px;
+            color: $titleColor;
+            font-weight: 500;
+            margin-bottom: 4px;
+          }
+
+          .price__description {
+            line-height: 18px;
+            font-weight: 400;
+          }
+        }
+
+        .flex-wrapper {
+          display: flex;
+          align-items: center;
+
+          .price__btn {
+            margin-left: auto;
+          }
+        }
+      }
+    }
+
+    &--desktop {
+      display: none;
+      @media screen and (min-width: $minViewTablet) {
+        display: block;
+      }
+    }
 
     .price__table {
       width: 100%;
-      margin-bottom: 24px;
-    }
-
-    .price__additional {
-      .price__additional-description {
-        font-size: 14px;
-        line-height: 20px;
-
-      }
     }
   }
 
-  .table__btn {
-    margin-left: auto;
+  .price__additional {
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
+
+
+    .price__additional-description {
+      font-size: 14px;
+      line-height: 20px;
+
+    }
   }
 
   .price__text-btn {
-    margin-top: 16px;
     padding-right: 5px;
     text-align: start;
+
     .text-btn__text {
       margin-left: 0;
     }
@@ -35,15 +97,4 @@
     }
   }
 
-}
-
-
-@media screen and (min-width: 1120px) {
-  .price__block {
-
-    .price__table {
-      margin-bottom: 32px;
-    }
-
-  }
 }

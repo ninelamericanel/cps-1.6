@@ -8,6 +8,8 @@
   font-size: 14px;
   line-height: 16px;
 
+  background-color: $bgMainColor;
+
   @media screen and (min-width: $minViewTablet) {
     flex-direction: row;
     justify-content: space-between;
