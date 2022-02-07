@@ -2,11 +2,20 @@
 
 .table {
   font-size: 14px;
+  box-sizing: border-box;
+  width: 100%;
+
+  th:first-child,
+  td:first-child {
+    padding-left: var(--main-padding);
+  }
+
+  td:last-child {
+    padding-right: var(--main-padding);
+  }
 
   .table__head {
     background-color: $bgMainColor;
-    border-left: var(--main-padding) solid $bgMainColor;
-    border-right: var(--main-padding) solid $bgMainColor;
 
     .table__row {
 
@@ -22,8 +31,6 @@
 
   .table__body {
     background-color: #FFFFFF;
-    border-left: var(--main-padding) solid #FFFFFF;
-    border-right: var(--main-padding) solid #FFFFFF;
 
     .table__row {
 
@@ -34,7 +41,8 @@
       .table__description {
         line-height: 18px;
         font-weight: 400;
-        padding: 23px 0;
+        padding-bottom: 23px;
+        padding-top: 23px;
       }
 
       .table__btn {

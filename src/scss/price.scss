@@ -62,19 +62,24 @@
 
     &--desktop {
       display: none;
+      padding-left: var(--main-padding);
+      padding-right: var(--main-padding);
+
       @media screen and (min-width: $minViewTablet) {
         display: block;
       }
     }
 
     .price__table {
-      width: 100%;
+      margin: 0 auto;
     }
   }
 
   .price__additional {
     padding-left: var(--main-padding);
     padding-right: var(--main-padding);
+
+    padding-bottom: var(--main-padding);
 
 
     .price__additional-description {
