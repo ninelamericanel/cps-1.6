@@ -4,11 +4,11 @@
   background-color: $bgMainColor;
 
   .price__headline {
-    margin-bottom: var(--main-padding);
+    margin-bottom: var(--margin-bottom);
   }
 
   .price__block {
-    margin-bottom: 24px;
+
 
     &--mobile {
       overflow: hidden;
@@ -65,6 +65,8 @@
       padding-left: var(--main-padding);
       padding-right: var(--main-padding);
 
+      margin-bottom: var(--margin-bottom);
+
       @media screen and (min-width: $minViewTablet) {
         display: block;
       }
@@ -76,12 +78,12 @@
   }
 
   .price__additional {
-    padding: 0 var(--main-padding) var(--main-padding) var(--main-padding);
+    padding: 0 var(--main-padding) var(--margin-bottom) var(--main-padding);
 
     .price__additional-description {
       font-size: 14px;
       line-height: 20px;
-      margin-bottom: var(--main-padding);
+      margin-bottom: var(--margin-bottom);
     }
   }
 
