@@ -2,7 +2,7 @@
 
 
 .information {
-  padding: 0 var(--main-padding);
+  padding: var(--main-padding);
   width: 100%;
   display: flex;
   gap: var(--main-padding);
@@ -16,7 +16,6 @@
   }
 
   .information__description {
-    //padding: var(--main-padding);
 
     @media screen and (min-width: $minViewTablet) {
       width: 50%;
