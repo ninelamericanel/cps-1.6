@@ -1,49 +1,13 @@
-const btnOpen = document.querySelectorAll('.open-btn');
-const btnClose = document.querySelectorAll('.btn-close');
-const content = document.querySelector('.content-wrapper');
-const popup = document.querySelectorAll('.popup');
+import {screenWidth} from "./variable";
 
-const btnOpenDesk = document.querySelectorAll('.open-btn.header-desktop__btn');
-const btnCloseDesk = document.querySelectorAll('.btn-close.header-desktop__btn');
-const popupDesk = document.querySelectorAll('.popup.left-popup');
+const menu = document.querySelector('.popup--left');
 
-btnOpenDesk.forEach((btn, i) => {
+function displayMenu () {
+  if (screenWidth >= 1366) {
+    menu.classList.remove('popup--close');
+  } else {
+    menu.classList.add('popup--close');
+  }
+}
 
-  btn.addEventListener('click', () => {
-
-    popupDesk[i].classList.add('popup__open');
-    document.body.style.overflow = "hidden";
-    content.classList.add('content-opacity');
-  });
-
-})
-
-
-btnCloseDesk.forEach((btn,i) => {
-  btn.addEventListener('click', () => {
-    popupDesk[i].classList.remove('popup__open');
-    document.body.style.overflow = "";
-    content.classList.remove('content-opacity');
-  })
-})
-
-
-btnOpen.forEach((btn, i) => {
-
-  btn.addEventListener('click', () => {
-
-    popup[i].classList.add('popup__open');
-    document.body.style.overflow = "hidden";
-    content.classList.add('content-opacity');
-  });
-
-})
-
-
-btnClose.forEach((btn,i) => {
-  btn.addEventListener('click', () => {
-    popup[i].classList.remove('popup__open');
-    document.body.style.overflow = "";
-    content.classList.remove('content-opacity');
-  })
-})
+displayMenu();

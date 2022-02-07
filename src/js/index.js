@@ -1,5 +1,5 @@
 import './display';
-import './popup-menu';
+import './menu';
 
 import '../scss/style.scss';
 import './swiper';
