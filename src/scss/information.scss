@@ -1,6 +1,5 @@
 @import 'variable';
 
-
 .information {
   padding: var(--main-padding);
   width: 100%;
@@ -20,28 +19,25 @@
     @media screen and (min-width: $minViewTablet) {
       width: 50%;
     }
-
   }
 
   .information__article {
     max-height: 90px;
     max-width: 100%;
 
-    margin-bottom: 16px;
-    //margin-right: 16px;
+    margin-bottom: var(--margin-bottom);
 
     text-overflow: clip;
     overflow: hidden;
 
     @media screen and (min-width: $minViewTablet) {
       max-height: 160px;
-
     }
 
     .information__text {
       font-size: 14px;
       font-weight: 400;
-
+      margin-bottom: var(--margin-bottom);
     }
   }
 
@@ -60,7 +56,6 @@
       width: 100%;
       height: auto;
       max-width: 600px;
-
 
       @media screen and (min-width: $minViewTablet) {
         border-radius: 8px;
