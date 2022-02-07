@@ -56,11 +56,14 @@
     }
 
     .repair__list {
+      margin-bottom: 50px;
 
       @media screen and (min-width: $minViewTablet) {
         display: flex;
         flex-wrap: wrap;
         column-gap: var(--main-padding);
+
+        margin-bottom: var(--main-padding);
 
         box-sizing: border-box;
         position: static;
@@ -105,6 +108,7 @@
 
   .repair__buttons {
     display: none;
+    padding-bottom: var(--main-padding);
 
     @media screen and (min-width: $minViewTablet) {
       padding-left: var(--main-padding);
