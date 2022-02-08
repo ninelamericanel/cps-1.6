@@ -34,4 +34,3 @@ function listenerPopup (btn, action) {
     changerClass(callPopup, action);
   }
 };
-

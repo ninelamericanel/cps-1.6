@@ -9,28 +9,6 @@
 
   z-index: 1;
 
-  .popup__outside {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-
-  .popup__content {
-    width: max-content;
-    height: 100%;
-
-    background-color: #FFFFFF;
-    position: absolute;
-    box-shadow: 16px 0 52px 20px rgba(14, 24, 80, 0.2);
-    z-index: 2;
-
-    .popup__btn-close {
-      position: absolute;
-
-    }
-  }
-
   &--left {
 
     @media screen and (min-width: $minViewDesktop) {
@@ -80,6 +58,35 @@
     }
   }
 
+  &--close {
+    display: none;
+  }
+
+  .popup__outside {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .popup__content {
+    width: max-content;
+    height: 100%;
+
+    background-color: #FFFFFF;
+    position: absolute;
+    box-shadow: 16px 0 52px 20px rgba(14, 24, 80, 0.2);
+    z-index: 2;
+
+    @media screen and (min-width: $minViewDesktop) {
+      box-shadow: none;
+    }
+
+    .popup__btn-close {
+      position: absolute;
+
+    }
+  }
 }
 
 
@@ -87,7 +94,3 @@
 
 
 
-
-.popup--close {
-  display: none;
-}
