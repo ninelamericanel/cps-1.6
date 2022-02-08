@@ -41,6 +41,10 @@
   align-items: center;
   background-color: inherit;
 
+  &--hide {
+    display: none;
+  }
+
   p {
     margin-left: 10px;
     font-size: 16px;
@@ -48,9 +52,4 @@
     line-height: 24px;
     color: $mainTextColor;
   }
-}
-
-
-.hide {
-  display: none;
 }
