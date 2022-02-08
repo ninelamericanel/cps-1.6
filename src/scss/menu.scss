@@ -85,47 +85,46 @@
             color: $titleColor;
           }
         }
-
-        .menu__link {
-          transition-duration: 500ms;
-          color: $mainTextColor;
-
-          &:hover {
-            color: $titleColor;
-          }
-
-        }
       }
     }
   }
-
-  .menu__footer {
-
-    .menu__connection-btn {
-      margin-bottom: 15px;
-    }
-
-    .menu__contact {
-      margin-bottom: 40px;
-
-      .menu__phone {
-        font-size: 24px;
-        line-height: 32px;
-        font-weight: 700;
-        letter-spacing: -0.6px;
-
-        margin-top: 12px;
-
-      }
-    }
-
-    .menu__list-lang {
-      display: flex;
-
-      .menu__link:not(:last-child) {
-        margin-right: 10px;
-      }
-    }
-  }
-
 }
+
+.menu__footer {
+
+  .menu__connection-btn {
+    margin-bottom: 15px;
+  }
+
+  .menu__contact {
+    margin-bottom: 40px;
+
+    .menu__phone {
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 700;
+      letter-spacing: -0.6px;
+
+      margin-top: 12px;
+
+    }
+  }
+
+  .menu__list-lang {
+    display: flex;
+
+    .menu__link:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.menu__link {
+  color: $mainTextColor;
+
+  &:hover {
+    color: $titleColor;
+  }
+}
+
+
