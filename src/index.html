@@ -14,7 +14,7 @@
 
   <header class="header">
 
-    <button type="button" class="header__menu-btn btn open-btn" title="Меню">
+    <button type="button" class="header__menu-btn btn open-btn" title="Меню" data-name="menu">
       <img
         alt="button menu"
         class="btn__img"
@@ -52,7 +52,7 @@
   <div class="btns-popup">
     <label class="wrapper-btn">
       <p class="btns-popup__text">Оставить заявку</p>
-      <button type="button" href="#" class="header-desktop__btn open-btn btn" title="Оставить заявку">
+      <button type="button" href="#" class="header-desktop__btn open-btn btn" title="Оставить заявку" data-name="feedback">
         <img
           alt="button repair"
           class="btn__img"
@@ -62,7 +62,7 @@
     </label>
     <label class="wrapper-btn">
       <p class="btns-popup__text">Статус ремонта</p>
-      <button type="button" href="#" class="header-desktop__btn open-btn btn" title="Статус ремонта">
+      <button type="button" href="#" class="header-desktop__btn open-btn btn" title="Статус ремонта" data-name="call">
 
         <img
           alt="button call"
@@ -693,7 +693,7 @@
 
 </div>
 
-<div class="popup popup--left popup--close">
+<div class="popup popup--left popup--close" id="menu">
   <div class="popup__outside"></div>
   <div class="popup__content">
     <button type="button" title="Скрыть" class="popup__btn-close btn">
@@ -782,7 +782,7 @@
   <!--</div>-->
 </div>
 
-<div class="popup popup--right popup--close">
+<div class="popup popup--right popup--close" id="feedback">
   <div class="popup__outside"></div>
   <div class="popup__content">
     <button type="button" title="Скрыть" class="popup__btn-close btn">
@@ -823,7 +823,7 @@
 
 </div>
 
-<div class="popup popup--right popup--close">
+<div class="popup popup--right popup--close" id="call">
   <div class="popup__outside"></div>
   <div class="popup__content">
     <button type="button" title="Скрыть" class="popup__btn-close btn">
