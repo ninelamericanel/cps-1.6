@@ -483,7 +483,7 @@ p {
 
 .menu__link {
   color: #1B1C21; }
-  .menu__link:hover {
+  .menu__link:hover, .menu__link--active {
     color: #7E7E82; }
 
 .footer {
