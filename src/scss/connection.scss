@@ -1,9 +1,5 @@
 .connection-btn {
   display: flex;
   align-items: center;
-
-  .connection-btn__btn {
-    margin-right: 15px;
-  }
-
+  column-gap: 15px;
 }
