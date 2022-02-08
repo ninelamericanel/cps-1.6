@@ -9,7 +9,6 @@
 
   z-index: 1;
 
-
   &--left {
 
     @media screen and (min-width: $minViewDesktop) {
@@ -26,6 +25,10 @@
     }
 
     .popup__content {
+      animation-name: transformLeft;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+
       .popup__btn-close {
         top: calc(var(--main-padding) + 9px);
         left: var(--main-padding);
@@ -35,6 +38,7 @@
         }
 
       }
+
       @media screen and (min-width: $minViewDesktop) {
         box-shadow: none;
       }
@@ -46,8 +50,12 @@
   &--right {
 
     .popup__content {
+      animation-name: transformRight;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
       right: 0;
     }
+
     .popup__btn-close {
       top: var(--main-padding);
       left: var(--main-padding);
@@ -98,10 +106,27 @@
     background-color: rgba(255, 255, 255, 0);
   }
   to {
-  background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
   }
 }
 
+@keyframes transformLeft {
+  from {
+    transform: translateX(-150%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes transformRight {
+  from {
+    transform: translateX(150%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 
 
 
