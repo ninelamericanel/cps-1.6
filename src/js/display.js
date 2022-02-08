@@ -1,12 +1,13 @@
 import {screenWidth} from "./variable";
 
-const listBrand = document.querySelectorAll('.repair__item.brand');
+const listBrand = document.querySelectorAll('.repair__item');
 const listEquipment = document.querySelectorAll('.repair__item.equipment')
 
+console.log(listBrand);
 
 const toDisplay = () => {
 
-    if (screenWidth >= 768 && screenWidth <= 1439) {
+    if (screenWidth >= 768 && screenWidth < 1366) {
 
       listBrand.forEach((el, index) => {
             if (index >= 6) {
