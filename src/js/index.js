@@ -7,6 +7,6 @@ import './swiper';
 import './menu';
 import './popup-btn';
 
-import './display-all';
+import './btn-item';
 import './read-more';
 
