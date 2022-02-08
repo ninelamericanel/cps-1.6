@@ -1,8 +1,8 @@
-import './display';
-import './menu';
-
 import '../scss/style.scss';
 import './swiper';
+import './display';
+import './menu';
+import './popup-btn';
 
 
 import './display-all';
