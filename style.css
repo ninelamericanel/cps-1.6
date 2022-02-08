@@ -253,7 +253,9 @@ p {
     -webkit-animation-duration: 1s;
             animation-duration: 1s;
     -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards; }
+            animation-fill-mode: forwards;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate; }
     .popup--left .popup__content .popup__btn-close {
       top: calc(var(--main-padding) + 9px);
       left: var(--main-padding); }
@@ -468,7 +470,7 @@ p {
   margin-bottom: 15px; }
 
 .menu__footer .menu__contact {
-  margin-bottom: 40px; }
+  margin-bottom: 30px; }
   .menu__footer .menu__contact .menu__phone {
     font-size: 24px;
     line-height: 32px;
@@ -524,14 +526,17 @@ p {
 @media screen and (max-width: 767px) {
   .swiper-container {
     display: flex;
-    position: relative; }
+    position: relative;
+    padding-bottom: var(--margin-bottom); }
     .swiper-container .swiper-wrapper {
-      margin-bottom: 34px; }
+      margin-bottom: 20px; }
       .swiper-container .swiper-wrapper .swiper-slide {
         width: 80%;
-        margin-right: 16px; }
+        margin-right: 16px;
+        margin-bottom: 20px; }
     .swiper-container .swiper-pagination {
-      height: 12px; }
+      height: 12px;
+      margin-bottom: 20px; }
       .swiper-container .swiper-pagination .swiper-pagination-bullet {
         width: 12px;
         height: 12px;
@@ -684,33 +689,31 @@ p {
     @media screen and (min-width: 1366px) {
       .repair .repair__block {
         width: calc(1366px - 320px); } }
-    .repair .repair__block .repair__list {
-      margin-bottom: 50px; }
-      @media screen and (min-width: 768px) {
-        .repair .repair__block .repair__list {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 16px var(--main-padding);
-          margin-bottom: var(--margin-bottom);
-          box-sizing: border-box;
-          position: static;
-          z-index: auto; } }
-      @media screen and (min-width: 768px) {
-        .repair .repair__block .repair__list .repair__item {
-          width: 224px; } }
-      @media screen and (min-width: 1366px) {
-        .repair .repair__block .repair__list .repair__item {
-          max-width: 240px; } }
-      .repair .repair__block .repair__list .repair__item--hide {
-        display: none; }
-      .repair .repair__block .repair__list .repair__item .repair__content {
+    @media screen and (min-width: 768px) {
+      .repair .repair__block .repair__list {
         display: flex;
-        align-items: center;
-        padding: 16px;
-        background-color: #ffffff;
-        border: 1px solid #eaeaea;
-        border-radius: 6px;
-        box-sizing: border-box; }
+        flex-wrap: wrap;
+        gap: 16px var(--main-padding);
+        margin-bottom: var(--margin-bottom);
+        box-sizing: border-box;
+        position: static;
+        z-index: auto; } }
+    @media screen and (min-width: 768px) {
+      .repair .repair__block .repair__list .repair__item {
+        width: 224px; } }
+    @media screen and (min-width: 1366px) {
+      .repair .repair__block .repair__list .repair__item {
+        max-width: 240px; } }
+    .repair .repair__block .repair__list .repair__item--hide {
+      display: none; }
+    .repair .repair__block .repair__list .repair__item .repair__content {
+      display: flex;
+      align-items: center;
+      padding: 16px;
+      background-color: #ffffff;
+      border: 1px solid #eaeaea;
+      border-radius: 6px;
+      box-sizing: border-box; }
   .repair .repair__buttons {
     display: none;
     padding-bottom: var(--margin-bottom); }
@@ -768,11 +771,6 @@ body {
     .content {
       width: calc(100vw - 320px);
       flex: 1; } }
-
-.wr {
-  display: flex;
-  min-height: 100%;
-  overflow: hidden; }
 
 :root {
   --main-padding: 16px;
