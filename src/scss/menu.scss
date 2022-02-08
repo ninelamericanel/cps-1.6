@@ -122,7 +122,8 @@
 .menu__link {
   color: $mainTextColor;
 
-  &:hover {
+  &:hover,
+  &--active {
     color: $titleColor;
   }
 }
