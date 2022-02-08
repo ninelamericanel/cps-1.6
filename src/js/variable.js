@@ -1,2 +1,2 @@
 
-export const screenWidth = screen.width;
+export const screenWidth = document.documentElement.clientWidth;
