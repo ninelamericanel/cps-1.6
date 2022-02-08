@@ -2,10 +2,15 @@ import {screenWidth} from "./variable";
 
 const openButtons = document.querySelectorAll('.open-btn');
 const closeButtons = document.querySelectorAll('.popup__btn-close');
+const popupOutside  = document.querySelectorAll('.popup__outside');
 
 const menuPopup = document.getElementById('menu');
 const feedbackPopup = document.getElementById('feedback');
 const callPopup = document.getElementById('call');
+
+popupOutside.forEach(el => {
+  el.addEventListener('click', () => listenerPopup(el, 'add'))
+})
 
 openButtons.forEach(btn => {
   btn.addEventListener('click', () => listenerPopup(btn, 'remove'))
@@ -29,3 +34,4 @@ function listenerPopup (btn, action) {
     changerClass(callPopup, action);
   }
 };
+
