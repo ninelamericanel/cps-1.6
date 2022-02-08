@@ -38,12 +38,13 @@
       max-height: max-content;
     }
 
-
-
     .information__text {
       font-size: 14px;
       font-weight: 400;
-      margin-bottom: var(--margin-bottom);
+
+      &:not(:last-child) {
+        margin-bottom: var(--margin-bottom);
+      }
     }
   }
 
