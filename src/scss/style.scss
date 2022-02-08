@@ -1,8 +1,5 @@
 @import 'fonts', 'header', 'btns-popup', 'reset', 'information', 'variable', 'headline', 'submenu', 'popup','link', 'title', 'feedback', 'form', 'menu', 'footer', 'connection', 'swiper-container', 'buttons', 'price', 'repair', 'table';
 
-$minWidth: 320;
-$maxWidth: 1920;
-
 body {
   font-family: "TT Lakes", Arial, sans-serif;
   font-size: 16px;
@@ -13,7 +10,6 @@ body {
   display: flex;
 
   flex-direction: row-reverse;
-  //background-color: #f8f8f8;
 }
 
 .container {
@@ -29,13 +25,6 @@ body {
     flex: 1;
   }
 }
-
-.wr /*wrapper - для всей верстки*/ {
-  display: flex;
-  min-height: 100%;
-  overflow: hidden;
-}
-
 
 :root {
   --main-padding: 16px;

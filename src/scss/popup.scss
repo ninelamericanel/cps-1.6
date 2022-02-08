@@ -14,7 +14,6 @@
     @media screen and (min-width: $minViewDesktop) {
       flex-basis: 320px;
       position: static;
-
     }
 
     .popup__outside {
@@ -29,6 +28,8 @@
       animation-duration: 1s;
       animation-fill-mode: forwards;
 
+      animation-direction: alternate;
+
       .popup__btn-close {
         top: calc(var(--main-padding) + 9px);
         left: var(--main-padding);
@@ -42,8 +43,6 @@
       @media screen and (min-width: $minViewDesktop) {
         box-shadow: none;
       }
-
-
     }
   }
 
@@ -69,6 +68,9 @@
 
   &--close {
     display: none;
+    animation-name: transformRight;
+    animation-duration: 1s;
+    animation-direction: reverse;
   }
 
   .popup__outside {
@@ -79,6 +81,7 @@
     animation-name: bg;
     animation-duration: 500ms;
     animation-fill-mode: forwards;
+
   }
 
   .popup__content {
