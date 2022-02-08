@@ -8,5 +8,5 @@ import './menu';
 import './popup-btn';
 
 import './btn-item';
-import './read-more';
+import './read-more-btn';
 
