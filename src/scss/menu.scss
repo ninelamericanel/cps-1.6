@@ -122,6 +122,8 @@
 .menu__link {
   color: $mainTextColor;
 
+  transition-duration: 200ms;
+
   &:hover,
   &--active {
     color: $titleColor;
