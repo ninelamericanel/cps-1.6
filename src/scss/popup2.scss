@@ -1,0 +1,122 @@
+@import "variable";
+
+.popup {
+
+  transition-duration: 1s;
+
+  &--right {
+
+    .popup__content {
+      width: max-content;
+
+      background-color: #FFFFFF;
+
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 4;
+
+      transition-duration: 1s;
+      transform: translateX(200%);
+    }
+
+    .popup__btn-close {
+      position: absolute;
+      top: var(--main-padding);
+      left: var(--main-padding);
+
+      z-index: 4;
+
+      @media screen and (min-width: $minViewTablet) {
+        left: calc(-1 * var(--main-padding) - 30px);
+      }
+    }
+
+    .popup__outside {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+
+      z-index: -1;
+      transition-property: background-color, z-index;
+      transition-duration: 1s;
+    }
+  }
+
+  &--left {
+
+    @media screen and (min-width: $minViewDesktop) {
+      transform: translateX(0);
+      position: static;
+      flex-basis: 320px;
+    }
+
+    .popup__content {
+      width: max-content;
+
+      background-color: #FFFFFF;
+
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 4;
+
+      transition-duration: 1s;
+      transform: translateX(-200%);
+    }
+
+    .popup__btn-close {
+      position: absolute;
+      top: calc(var(--main-padding) + 9px);
+      left: var(--main-padding);
+
+      @media screen and (min-width: $minViewDesktop) {
+        display: none;
+      }
+
+    }
+
+    .popup__outside {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+
+      z-index: -1;
+      transition-property: background-color, z-index;
+      transition-duration: 1s;
+
+      @media screen and (min-width: $minViewDesktop) {
+        display: none;
+      }
+    }
+  }
+
+  &--open {
+    z-index: 2;
+
+    .popup__content {
+
+      box-shadow: 16px 0 52px 20px rgba(14, 24, 80, 0.2);
+      transform: translateX(0);
+    }
+
+    .popup__outside {
+      z-index: 3;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  }
+}
+
+
+.popup--left.popup--open {
+
+  @media screen and (min-width: $minViewDesktop) {
+    z-index: 0;
+  }
+
+  .popup__content {
+    @media screen and (min-width: $minViewDesktop) {
+      box-shadow: none;
+    }
+  }
+}
