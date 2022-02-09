@@ -23,6 +23,7 @@
     display: flex;
     align-items: center;
     margin-left: 55px;
+    margin-bottom: var(--margin-bottom);
 
     @media screen and (min-width: $minViewDesktop) {
       margin-left: 0;
