@@ -338,11 +338,6 @@ p {
     z-index: -1;
     transition-property: background-color, z-index;
     transition-duration: 1s; }
-  @media screen and (min-width: 1366px) {
-    .popup--left {
-      transform: translateX(0);
-      position: static;
-      flex-basis: 320px; } }
   .popup--left .popup__content {
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -356,7 +351,9 @@ p {
     transform: translateX(-200%); }
     @media screen and (min-width: 1366px) {
       .popup--left .popup__content {
-        transform: translateX(0); } }
+        transform: none;
+        position: static;
+        flex-basis: 320px; } }
   .popup--left .popup__btn-close {
     position: absolute;
     top: calc(var(--main-padding) + 9px);
