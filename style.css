@@ -396,21 +396,25 @@ p {
   outline: none;
   transition-duration: 300ms; }
   .form .form__input::-webkit-input-placeholder {
+    font-family: "TT Lakes", Arial, sans-serif;
     color: #B5B6BC;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px; }
   .form .form__input::-moz-placeholder {
+    font-family: "TT Lakes", Arial, sans-serif;
     color: #B5B6BC;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px; }
   .form .form__input:-ms-input-placeholder {
+    font-family: "TT Lakes", Arial, sans-serif;
     color: #B5B6BC;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px; }
   .form .form__input::placeholder {
+    font-family: "TT Lakes", Arial, sans-serif;
     color: #B5B6BC;
     font-size: 16px;
     font-weight: 500;
