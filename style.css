@@ -452,7 +452,7 @@ p {
         border-radius: 20px;
         position: absolute;
         left: calc(-1 * var(--main-padding));
-        transition-duration: 500ms; }
+        transition-duration: 200ms; }
       .menu .menu__nav .menu__list .menu__item--active:before, .menu .menu__nav .menu__list .menu__item:hover:before {
         display: block;
         content: "";
@@ -484,7 +484,8 @@ p {
     margin-right: 10px; }
 
 .menu__link {
-  color: #1B1C21; }
+  color: #1B1C21;
+  transition-duration: 200ms; }
   .menu__link:hover, .menu__link--active {
     color: #7E7E82; }
 
