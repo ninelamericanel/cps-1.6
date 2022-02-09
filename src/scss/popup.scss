@@ -45,12 +45,6 @@
 
   &--left {
 
-    @media screen and (min-width: $minViewDesktop) {
-      transform: translateX(0);
-      position: static;
-      flex-basis: 320px;
-    }
-
     .popup__content {
       width: max-content;
 
@@ -65,7 +59,9 @@
       transform: translateX(-200%);
 
       @media screen and (min-width: $minViewDesktop) {
-        transform: translateX(0);
+        transform: none;
+        position: static;
+        flex-basis: 320px;
       }
     }
 
