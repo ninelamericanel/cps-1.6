@@ -393,7 +393,11 @@ p {
   margin-bottom: 16px;
   border: 1px solid #EAEAEA;
   border-radius: 8px;
-  outline: none; }
+  outline: none;
+  transition-duration: 300ms; }
+
+.form .form__textarea {
+  min-height: 90px; }
 
 .form .form__input:focus,
 .form .form__input:active,
