@@ -354,6 +354,9 @@ p {
     z-index: 4;
     transition-duration: 1s;
     transform: translateX(-200%); }
+    @media screen and (min-width: 1366px) {
+      .popup--left .popup__content {
+        transform: translateX(0); } }
   .popup--left .popup__btn-close {
     position: absolute;
     top: calc(var(--main-padding) + 9px);
