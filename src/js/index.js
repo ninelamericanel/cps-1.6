@@ -1,13 +1,11 @@
-import './display-item';
-import './popup-left-display';
-import '../scss/style.scss';
+import "./display-item";
+import "./popup-left-display";
+import "../scss/style.scss";
 
-import './swiper';
+import "./swiper";
 
+import "./menu";
+import "./popup-btn";
 
-import './menu';
-import './popup-btn';
-
-import './btn-item';
-import './read-more-btn';
-
+import "./btn-item";
+import "./read-more-btn";

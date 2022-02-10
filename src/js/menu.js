@@ -1,12 +1,12 @@
-import {screenWidth} from "./variable";
+import { screenWidth } from "./variable";
 
-const menu = document.querySelector('.popup--left');
+const menu = document.querySelector(".popup--left");
 
-function displayMenu () {
+function displayMenu() {
   if (screenWidth >= 1366) {
-    menu.classList.remove('popup--close');
+    menu.classList.remove("popup--close");
   } else {
-    menu.classList.add('popup--close');
+    menu.classList.add("popup--close");
   }
 }
 

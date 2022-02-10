@@ -1,4 +1,4 @@
-@import 'variable';
+@import "variable";
 
 .headline {
   background-color: $bgHeadlineColor;
@@ -10,7 +10,6 @@
     padding: 16px var(--main-padding);
   }
 
-
   .headline__title {
     font-weight: 400;
     font-size: 16px;
@@ -18,4 +17,3 @@
     color: $titleColor;
   }
 }
-
