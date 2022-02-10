@@ -22,6 +22,7 @@
   }
 
   .footer__privacy-policy {
+    margin-bottom: var(--margin-bottom);
 
     @media screen and (min-width: $minViewTablet) {
       margin: 0 20px;
@@ -33,13 +34,18 @@
     .footer__text {
       @media screen and (min-width: $minViewTablet) {
         text-align: end;
+        max-width: 215px;
+      }
+
+      @media screen and (min-width: $minViewDesktop) {
+        text-align: end;
         max-width: 320px;
       }
     }
   }
 
   .footer__copyright {
-    margin-bottom: 16px;
+    margin-bottom: var(--margin-bottom);
 
     .footer__text {
       @media screen and (min-width: $minViewTablet) {
