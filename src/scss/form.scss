@@ -10,7 +10,7 @@
     margin-bottom: 16px;
     border: 1px solid $borderBottomTable;
     border-radius: 8px;
-    outline: none;
+    outline: $borderBottomTable;
 
     transition-duration: 300ms;
 
