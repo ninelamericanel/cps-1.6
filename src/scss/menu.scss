@@ -85,46 +85,48 @@
       }
     }
   }
-}
 
-.menu__footer {
+  .menu__footer {
 
-  .menu__connection-btn {
-    margin-bottom: 16px;
-  }
+    .menu__connection-btn {
+      margin-bottom: 16px;
+    }
 
-  .menu__contact {
-    margin-bottom: var(--margin-bottom-menu-lang);
+    .menu__contact {
+      display: flex;
+      flex-direction: column;
+      row-gap: 12px;
+      margin-bottom: var(--margin-bottom-menu-lang);
 
-    .menu__phone {
-      font-size: 24px;
-      line-height: 32px;
-      font-weight: 700;
-      letter-spacing: -0.6px;
+      .menu__phone {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+        letter-spacing: -0.6px;
+      }
+    }
 
-      margin-top: 12px;
+    .menu__list-lang {
+      display: flex;
 
+      .menu__link:not(:last-child) {
+        margin-right: 10px;
+      }
     }
   }
 
-  .menu__list-lang {
-    display: flex;
+  .menu__link {
+    color: $mainTextColor;
 
-    .menu__link:not(:last-child) {
-      margin-right: 10px;
+    transition-duration: 200ms;
+
+    &:hover,
+    &--active {
+      color: $titleColor;
     }
   }
 }
 
-.menu__link {
-  color: $mainTextColor;
 
-  transition-duration: 200ms;
-
-  &:hover,
-  &--active {
-    color: $titleColor;
-  }
-}
 
 
