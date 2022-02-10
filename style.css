@@ -885,6 +885,7 @@ p {
   .price .price__block .price__table {
     margin: 0 auto; }
   .price .price__additional {
+    max-width: 525px;
     padding: 0 var(--main-padding) var(--margin-bottom) var(--main-padding); }
     .price .price__additional .price__additional-description {
       font-size: 14px;
