@@ -43,7 +43,7 @@
         transition-duration: 500ms;
 
         &:not(:last-child) {
-          margin-bottom: 35px;
+          margin-bottom: var(--margin-bottom-menu);
         }
 
         &:before {
@@ -62,7 +62,8 @@
         }
 
         &--active:before,
-        &:hover:before {
+        &:hover:before,
+        &:focus:before {
           display: block;
           content: "";
 
@@ -89,11 +90,11 @@
 .menu__footer {
 
   .menu__connection-btn {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
   }
 
   .menu__contact {
-    margin-bottom: 30px;
+    margin-bottom: var(--margin-bottom-menu-lang);
 
     .menu__phone {
       font-size: 24px;
