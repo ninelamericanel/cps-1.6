@@ -1,4 +1,4 @@
-@import 'variable';
+@import "variable";
 
 .header {
   padding: var(--main-padding); /*!*/
@@ -49,7 +49,6 @@
         display: none;
       }
     }
-
   }
 
   .header__connection-btn {
@@ -70,4 +69,3 @@
     }
   }
 }
-

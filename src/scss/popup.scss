@@ -1,15 +1,13 @@
 @import "variable";
 
 .popup {
-
   transition-duration: 1s;
 
   &--right {
-
     .popup__content {
       width: max-content;
 
-      background-color: #FFFFFF;
+      background-color: #ffffff;
 
       position: absolute;
       right: 0;
@@ -44,11 +42,10 @@
   }
 
   &--left {
-
     .popup__content {
       width: max-content;
 
-      background-color: #FFFFFF;
+      background-color: #ffffff;
 
       position: absolute;
       left: 0;
@@ -73,7 +70,6 @@
       @media screen and (min-width: $minViewDesktop) {
         display: none;
       }
-
     }
 
     .popup__outside {
@@ -95,7 +91,6 @@
     z-index: 2;
 
     .popup__content {
-
       box-shadow: 16px 0 52px 20px rgba(14, 24, 80, 0.2);
       transform: translateX(0);
     }
@@ -107,9 +102,7 @@
   }
 }
 
-
 .popup--left.popup--open {
-
   @media screen and (min-width: $minViewDesktop) {
     z-index: 0;
   }

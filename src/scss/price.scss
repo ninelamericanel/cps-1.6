@@ -8,7 +8,6 @@
   }
 
   .price__block {
-
     &--mobile {
       overflow: hidden;
 
@@ -30,7 +29,6 @@
         border-radius: 6px;
 
         .price__info {
-
           p {
             font-size: 14px;
           }
@@ -99,5 +97,4 @@
       vertical-align: middle;
     }
   }
-
 }

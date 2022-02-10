@@ -1,4 +1,4 @@
-@import 'variable';
+@import "variable";
 
 .information {
   padding: var(--main-padding);
@@ -15,7 +15,6 @@
   }
 
   .information__description {
-
     @media screen and (min-width: $minViewTablet) {
       width: 50%;
     }
@@ -70,6 +69,3 @@
     }
   }
 }
-
-
-
