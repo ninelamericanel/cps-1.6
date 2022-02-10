@@ -94,7 +94,7 @@
       box-shadow: 16px 0 52px 20px rgba(14, 24, 80, 0.2);
       transform: translateX(0);
 
-      @media screen and (min-height: 320px) {
+      @media screen and (min-height: 320px) and (min-height: 700px){
         overflow-y: scroll;
       }
 
