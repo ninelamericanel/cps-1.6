@@ -19,10 +19,14 @@ $minViewDesktop: 1366px;
 :root {
   --main-padding: 16px;
   --margin-bottom: 15px;
+  --margin-bottom-menu: 24px;
+  --margin-bottom-menu-lang: 8px;
 
   @media screen and (min-width: $minViewTablet) {
     --main-padding: 24px;
     --margin-bottom: 24px;
+    --margin-bottom-menu: 32px;
+    --margin-bottom-menu-lang: 40px;
   }
 
   @media screen and (min-width: $minViewDesktop) {
