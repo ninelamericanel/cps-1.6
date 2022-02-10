@@ -18,11 +18,15 @@
 
 :root {
   --main-padding: 16px;
-  --margin-bottom: 15px; }
+  --margin-bottom: 15px;
+  --margin-bottom-menu: 24px;
+  --margin-bottom-menu-lang: 8px; }
   @media screen and (min-width: 768px) {
     :root {
       --main-padding: 24px;
-      --margin-bottom: 24px; } }
+      --margin-bottom: 24px;
+      --margin-bottom-menu: 32px;
+      --margin-bottom-menu-lang: 40px; } }
   @media screen and (min-width: 1366px) {
     :root {
       --main-padding: 30px; } }
@@ -82,11 +86,15 @@
 
 :root {
   --main-padding: 16px;
-  --margin-bottom: 15px; }
+  --margin-bottom: 15px;
+  --margin-bottom-menu: 24px;
+  --margin-bottom-menu-lang: 8px; }
   @media screen and (min-width: 768px) {
     :root {
       --main-padding: 24px;
-      --margin-bottom: 24px; } }
+      --margin-bottom: 24px;
+      --margin-bottom-menu: 32px;
+      --margin-bottom-menu-lang: 40px; } }
   @media screen and (min-width: 1366px) {
     :root {
       --main-padding: 30px; } }
@@ -165,11 +173,15 @@ p {
 
 :root {
   --main-padding: 16px;
-  --margin-bottom: 15px; }
+  --margin-bottom: 15px;
+  --margin-bottom-menu: 24px;
+  --margin-bottom-menu-lang: 8px; }
   @media screen and (min-width: 768px) {
     :root {
       --main-padding: 24px;
-      --margin-bottom: 24px; } }
+      --margin-bottom: 24px;
+      --margin-bottom-menu: 32px;
+      --margin-bottom-menu-lang: 40px; } }
   @media screen and (min-width: 1366px) {
     :root {
       --main-padding: 30px; } }
@@ -228,22 +240,30 @@ p {
 
 :root {
   --main-padding: 16px;
-  --margin-bottom: 15px; }
+  --margin-bottom: 15px;
+  --margin-bottom-menu: 24px;
+  --margin-bottom-menu-lang: 8px; }
   @media screen and (min-width: 768px) {
     :root {
       --main-padding: 24px;
-      --margin-bottom: 24px; } }
+      --margin-bottom: 24px;
+      --margin-bottom-menu: 32px;
+      --margin-bottom-menu-lang: 40px; } }
   @media screen and (min-width: 1366px) {
     :root {
       --main-padding: 30px; } }
 
 :root {
   --main-padding: 16px;
-  --margin-bottom: 15px; }
+  --margin-bottom: 15px;
+  --margin-bottom-menu: 24px;
+  --margin-bottom-menu-lang: 8px; }
   @media screen and (min-width: 768px) {
     :root {
       --main-padding: 24px;
-      --margin-bottom: 24px; } }
+      --margin-bottom: 24px;
+      --margin-bottom-menu: 32px;
+      --margin-bottom-menu-lang: 40px; } }
   @media screen and (min-width: 1366px) {
     :root {
       --main-padding: 30px; } }
@@ -263,11 +283,15 @@ p {
 
 :root {
   --main-padding: 16px;
-  --margin-bottom: 15px; }
+  --margin-bottom: 15px;
+  --margin-bottom-menu: 24px;
+  --margin-bottom-menu-lang: 8px; }
   @media screen and (min-width: 768px) {
     :root {
       --main-padding: 24px;
-      --margin-bottom: 24px; } }
+      --margin-bottom: 24px;
+      --margin-bottom-menu: 32px;
+      --margin-bottom-menu-lang: 40px; } }
   @media screen and (min-width: 1366px) {
     :root {
       --main-padding: 30px; } }
@@ -301,11 +325,15 @@ p {
 
 :root {
   --main-padding: 16px;
-  --margin-bottom: 15px; }
+  --margin-bottom: 15px;
+  --margin-bottom-menu: 24px;
+  --margin-bottom-menu-lang: 8px; }
   @media screen and (min-width: 768px) {
     :root {
       --main-padding: 24px;
-      --margin-bottom: 24px; } }
+      --margin-bottom: 24px;
+      --margin-bottom-menu: 32px;
+      --margin-bottom-menu-lang: 40px; } }
   @media screen and (min-width: 1366px) {
     :root {
       --main-padding: 30px; } }
@@ -390,11 +418,15 @@ p {
 
 :root {
   --main-padding: 16px;
-  --margin-bottom: 15px; }
+  --margin-bottom: 15px;
+  --margin-bottom-menu: 24px;
+  --margin-bottom-menu-lang: 8px; }
   @media screen and (min-width: 768px) {
     :root {
       --main-padding: 24px;
-      --margin-bottom: 24px; } }
+      --margin-bottom: 24px;
+      --margin-bottom-menu: 32px;
+      --margin-bottom-menu-lang: 40px; } }
   @media screen and (min-width: 1366px) {
     :root {
       --main-padding: 30px; } }
@@ -404,11 +436,15 @@ p {
 
 :root {
   --main-padding: 16px;
-  --margin-bottom: 15px; }
+  --margin-bottom: 15px;
+  --margin-bottom-menu: 24px;
+  --margin-bottom-menu-lang: 8px; }
   @media screen and (min-width: 768px) {
     :root {
       --main-padding: 24px;
-      --margin-bottom: 24px; } }
+      --margin-bottom: 24px;
+      --margin-bottom-menu: 32px;
+      --margin-bottom-menu-lang: 40px; } }
   @media screen and (min-width: 1366px) {
     :root {
       --main-padding: 30px; } }
@@ -434,11 +470,15 @@ p {
 
 :root {
   --main-padding: 16px;
-  --margin-bottom: 15px; }
+  --margin-bottom: 15px;
+  --margin-bottom-menu: 24px;
+  --margin-bottom-menu-lang: 8px; }
   @media screen and (min-width: 768px) {
     :root {
       --main-padding: 24px;
-      --margin-bottom: 24px; } }
+      --margin-bottom: 24px;
+      --margin-bottom-menu: 32px;
+      --margin-bottom-menu-lang: 40px; } }
   @media screen and (min-width: 1366px) {
     :root {
       --main-padding: 30px; } }
@@ -466,11 +506,15 @@ p {
 
 :root {
   --main-padding: 16px;
-  --margin-bottom: 15px; }
+  --margin-bottom: 15px;
+  --margin-bottom-menu: 24px;
+  --margin-bottom-menu-lang: 8px; }
   @media screen and (min-width: 768px) {
     :root {
       --main-padding: 24px;
-      --margin-bottom: 24px; } }
+      --margin-bottom: 24px;
+      --margin-bottom-menu: 32px;
+      --margin-bottom-menu-lang: 40px; } }
   @media screen and (min-width: 1366px) {
     :root {
       --main-padding: 30px; } }
@@ -483,7 +527,7 @@ p {
   margin-bottom: 16px;
   border: 1px solid #EAEAEA;
   border-radius: 8px;
-  outline: none;
+  outline: #EAEAEA;
   transition-duration: 300ms; }
   .form .form__input::-webkit-input-placeholder {
     font-family: "TT Lakes", Arial, sans-serif;
@@ -532,11 +576,15 @@ p {
 
 :root {
   --main-padding: 16px;
-  --margin-bottom: 15px; }
+  --margin-bottom: 15px;
+  --margin-bottom-menu: 24px;
+  --margin-bottom-menu-lang: 8px; }
   @media screen and (min-width: 768px) {
     :root {
       --main-padding: 24px;
-      --margin-bottom: 24px; } }
+      --margin-bottom: 24px;
+      --margin-bottom-menu: 32px;
+      --margin-bottom-menu-lang: 40px; } }
   @media screen and (min-width: 1366px) {
     :root {
       --main-padding: 30px; } }
@@ -569,7 +617,7 @@ p {
       position: relative;
       transition-duration: 500ms; }
       .menu .menu__nav .menu__list .menu__item:not(:last-child) {
-        margin-bottom: 35px; }
+        margin-bottom: var(--margin-bottom-menu); }
       .menu .menu__nav .menu__list .menu__item:before {
         display: block;
         content: "";
@@ -580,7 +628,7 @@ p {
         position: absolute;
         left: calc(-1 * var(--main-padding));
         transition-duration: 200ms; }
-      .menu .menu__nav .menu__list .menu__item--active:before, .menu .menu__nav .menu__list .menu__item:hover:before {
+      .menu .menu__nav .menu__list .menu__item--active:before, .menu .menu__nav .menu__list .menu__item:hover:before, .menu .menu__nav .menu__list .menu__item:focus:before {
         display: block;
         content: "";
         height: 32px;
@@ -592,37 +640,39 @@ p {
         position: relative; }
         .menu .menu__nav .menu__list .menu__item--active .menu__link {
           color: #7E7E82; }
-
-.menu__footer .menu__connection-btn {
-  margin-bottom: 15px; }
-
-.menu__footer .menu__contact {
-  margin-bottom: 30px; }
-  .menu__footer .menu__contact .menu__phone {
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 700;
-    letter-spacing: -0.6px;
-    margin-top: 12px; }
-
-.menu__footer .menu__list-lang {
-  display: flex; }
-  .menu__footer .menu__list-lang .menu__link:not(:last-child) {
-    margin-right: 10px; }
-
-.menu__link {
-  color: #1B1C21;
-  transition-duration: 200ms; }
-  .menu__link:hover, .menu__link--active {
-    color: #7E7E82; }
+  .menu .menu__footer .menu__connection-btn {
+    margin-bottom: 16px; }
+  .menu .menu__footer .menu__contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    margin-bottom: var(--margin-bottom-menu-lang); }
+    .menu .menu__footer .menu__contact .menu__phone {
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 700;
+      letter-spacing: -0.6px; }
+  .menu .menu__footer .menu__list-lang {
+    display: flex; }
+    .menu .menu__footer .menu__list-lang .menu__link:not(:last-child) {
+      margin-right: 10px; }
+  .menu .menu__link {
+    color: #1B1C21;
+    transition-duration: 200ms; }
+    .menu .menu__link:hover, .menu .menu__link--active {
+      color: #7E7E82; }
 
 :root {
   --main-padding: 16px;
-  --margin-bottom: 15px; }
+  --margin-bottom: 15px;
+  --margin-bottom-menu: 24px;
+  --margin-bottom-menu-lang: 8px; }
   @media screen and (min-width: 768px) {
     :root {
       --main-padding: 24px;
-      --margin-bottom: 24px; } }
+      --margin-bottom: 24px;
+      --margin-bottom-menu: 32px;
+      --margin-bottom-menu-lang: 40px; } }
   @media screen and (min-width: 1366px) {
     :root {
       --main-padding: 30px; } }
@@ -643,15 +693,21 @@ p {
   .footer .footer__text {
     color: #7E7E82;
     text-align: center; }
+  .footer .footer__privacy-policy {
+    margin-bottom: var(--margin-bottom); }
+    @media screen and (min-width: 768px) {
+      .footer .footer__privacy-policy {
+        margin: 0 20px; } }
   @media screen and (min-width: 768px) {
-    .footer .footer__privacy-policy {
-      margin: 0 20px; } }
-  @media screen and (min-width: 768px) {
+    .footer .footer__info .footer__text {
+      text-align: end;
+      max-width: 215px; } }
+  @media screen and (min-width: 1366px) {
     .footer .footer__info .footer__text {
       text-align: end;
       max-width: 320px; } }
   .footer .footer__copyright {
-    margin-bottom: 16px; }
+    margin-bottom: var(--margin-bottom); }
     @media screen and (min-width: 768px) {
       .footer .footer__copyright .footer__text {
         text-align: start; } }
@@ -664,11 +720,15 @@ p {
 
 :root {
   --main-padding: 16px;
-  --margin-bottom: 15px; }
+  --margin-bottom: 15px;
+  --margin-bottom-menu: 24px;
+  --margin-bottom-menu-lang: 8px; }
   @media screen and (min-width: 768px) {
     :root {
       --main-padding: 24px;
-      --margin-bottom: 24px; } }
+      --margin-bottom: 24px;
+      --margin-bottom-menu: 32px;
+      --margin-bottom-menu-lang: 40px; } }
   @media screen and (min-width: 1366px) {
     :root {
       --main-padding: 30px; } }
@@ -708,11 +768,15 @@ p {
 
 :root {
   --main-padding: 16px;
-  --margin-bottom: 15px; }
+  --margin-bottom: 15px;
+  --margin-bottom-menu: 24px;
+  --margin-bottom-menu-lang: 8px; }
   @media screen and (min-width: 768px) {
     :root {
       --main-padding: 24px;
-      --margin-bottom: 24px; } }
+      --margin-bottom: 24px;
+      --margin-bottom-menu: 32px;
+      --margin-bottom-menu-lang: 40px; } }
   @media screen and (min-width: 1366px) {
     :root {
       --main-padding: 30px; } }
@@ -762,11 +826,15 @@ p {
 
 :root {
   --main-padding: 16px;
-  --margin-bottom: 15px; }
+  --margin-bottom: 15px;
+  --margin-bottom-menu: 24px;
+  --margin-bottom-menu-lang: 8px; }
   @media screen and (min-width: 768px) {
     :root {
       --main-padding: 24px;
-      --margin-bottom: 24px; } }
+      --margin-bottom: 24px;
+      --margin-bottom-menu: 32px;
+      --margin-bottom-menu-lang: 40px; } }
   @media screen and (min-width: 1366px) {
     :root {
       --main-padding: 30px; } }
@@ -832,11 +900,15 @@ p {
 
 :root {
   --main-padding: 16px;
-  --margin-bottom: 15px; }
+  --margin-bottom: 15px;
+  --margin-bottom-menu: 24px;
+  --margin-bottom-menu-lang: 8px; }
   @media screen and (min-width: 768px) {
     :root {
       --main-padding: 24px;
-      --margin-bottom: 24px; } }
+      --margin-bottom: 24px;
+      --margin-bottom-menu: 32px;
+      --margin-bottom-menu-lang: 40px; } }
   @media screen and (min-width: 1366px) {
     :root {
       --main-padding: 30px; } }
@@ -907,11 +979,15 @@ p {
 
 :root {
   --main-padding: 16px;
-  --margin-bottom: 15px; }
+  --margin-bottom: 15px;
+  --margin-bottom-menu: 24px;
+  --margin-bottom-menu-lang: 8px; }
   @media screen and (min-width: 768px) {
     :root {
       --main-padding: 24px;
-      --margin-bottom: 24px; } }
+      --margin-bottom: 24px;
+      --margin-bottom-menu: 32px;
+      --margin-bottom-menu-lang: 40px; } }
   @media screen and (min-width: 1366px) {
     :root {
       --main-padding: 30px; } }
