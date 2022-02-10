@@ -406,6 +406,9 @@ p {
     .popup--open .popup__content {
       box-shadow: 16px 0 52px 20px rgba(14, 24, 80, 0.2);
       transform: translateX(0); }
+      @media screen and (min-height: 320px) and (min-height: 700px) {
+        .popup--open .popup__content {
+          overflow-y: scroll; } }
     .popup--open .popup__outside {
       z-index: 3;
       background-color: rgba(255, 255, 255, 0.8); }
