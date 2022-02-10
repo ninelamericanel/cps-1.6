@@ -93,6 +93,11 @@
     .popup__content {
       box-shadow: 16px 0 52px 20px rgba(14, 24, 80, 0.2);
       transform: translateX(0);
+
+      @media screen and (min-height: 320px) {
+        overflow-y: scroll;
+      }
+
     }
 
     .popup__outside {
